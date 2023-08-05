@@ -1,0 +1,83 @@
+.ui-layout{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: 1000;
+}
+.loading-wrapper {
+    width: 100%;
+}
+.title-block {
+  padding-bottom: 24px;
+  padding-top: 8px;
+}
+.list-block {
+  padding-top: 12px;
+}
+.loading { 
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(linear, left center, right center, from(#f6f7f8), color-stop(.2, #edeef1), color-stop(.4, #f6f7f8), to(#f6f7f8));
+  background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+.title {
+  height: 30px;
+  width: 25%;
+  margin-bottom: 28px;
+}
+.content {
+  height: 30px;
+  margin-bottom: 12px;
+}
+.content.line-item {
+  margin-bottom: 28px;
+}
+.last-row {
+  width: 90%;
+  margin-bottom: 0px;
+}
+
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/*Regular styles*/
+html {
+      -webkit-font-smoothing: antialiased;
+}
+
+.ui-layout__item {
+    min-width: 0;
+    max-width: 100%;
+    flex: 2 1 480px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.ui-card {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 200px;
+  height: auto;
+}

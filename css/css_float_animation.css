@@ -1,0 +1,56 @@
+
+.view {
+
+	position: absolute;
+	top: -420px;
+    right: 0;
+	max-width: 800px;
+	width: 800px;
+	height: 400px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+}
+
+.laptop:hover .view {
+
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.laptop {
+
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	position: relative;
+	
+}
+
+@keyframes float {
+
+	0% {
+	
+		transform: translatey(0px);
+	
+	}
+
+	50% {
+	
+		transform: translatey(-20px);
+	
+	}
+
+	100% {
+		
+		transform: translatey(0px);
+
+	}
+
+}

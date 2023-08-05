@@ -1,0 +1,33 @@
+*{
+		cursor: none;
+	}
+.cursor{
+	position: fixed;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #2e302e;
+	pointer-events: none;
+	transform: translate(-50%,-50%);
+	z-index: 100;
+}
+.cursor2{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #2e302e;
+	box-shadow: 0px 0px 15px -1px #2e302e;
+	pointer-events: none;
+	transition: .2s;
+	transform: translate(-50%,-50%);
+	z-index: 100;
+}
+
+.cursor_color{
+	background: white;
+}
+.cursor2_color{
+	border: 2px solid white;
+	box-shadow: 0px 0px 15px -1px white;
+}
